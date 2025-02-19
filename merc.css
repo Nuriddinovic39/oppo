@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.stylee{
+    width: 100%;
+    height: 730px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.527);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(
+      5px
+    ); 
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color .8s;
+  }
+  
+  nav ul li a:hover {
+    color: #ff00ff;
+  }
+
+  .katta{
+    background-color: white;
+    width: 100%;
+    height: 900px;
+  }
+
+  .tt{
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+
+  .fds{
+    display: flex;
+    gap: 80px;
+    margin-left: 230px;
+  }
+
+  .f img{
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+  }
+
+  .f img:hover{
+    box-shadow: 5px 5px 5px 5px gray;
+  }
+
+  .f12{
+    display: block;
+  }
+
+  .katta1{
+    background-color: black;
+    width: 100%;
+    height: 780px;
+  }
+
+  .des{
+    background-color: red;
+    color:white;
+    width: 70px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .id{
+    background-color: red;
+    color:white;
+    width: 70px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .os{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 18px;
+    border-radius: 30px 30px;
+  }
+
+  .div{
+    background-color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .okm{
+    display: flex;
+    color: black;
+    gap: 50px;
+    padding-left: 250px;
+  }
+
+  .o,
+  .k,
+  .m {
+    background-color: white;
+    width: 320px;
+    height: 320px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  #text,
+  #email{
+    width: 300px;
+    height: 30px;
+  }
+
+  #Message{
+    width: 600px;
+    height: 30px;
+  }
+
+  .aaa{
+    display: flex;
+    gap: 200px;
+    margin-left: 300px;
+  }
+
+  .ddg{
+    width: 100%;
+    height: 900px;
+  }
+
+  .ee{
+    margin-left: 660px;
+  }
+
+
+
+
+
+  /* ////////////////////////////////////////////////////////////////////////////// */
+  @media screen and (max-width: 1200px) {
+    .katta {
+        height: auto;
+    }
+
+    .fds {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .f {
+        margin-bottom: 20px;
+    }
+
+    .katta1 {
+        height: auto;
+    }
+
+    .okm {
+        display: block;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .o, .k, .m {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .aaa {
+        display: block;
+        gap: 20px;
+        margin-left: 0;
+    }
+
+    .ddg {
+        height: 500px;
+    }
+
+    .ee {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+  }
+
+  header .logo {
+      font-size: 20px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  nav ul li {
+      display: block;
+  }
+
+  .katta {
+      height: auto;
+      padding: 20px;
+  }
+
+  .tt {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 16px;
+  }
+
+  .fds {
+      display: block;
+      margin-left: 0;
+      text-align: center;
+  }
+
+  .f img {
+      width: 100%;
+      height: auto;
+  }
+
+  .katta1 {
+      height: auto;
+  }
+
+  .div {
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .okm {
+      display: block;
+      margin-top: 20px;
+  }
+
+  .o, .k, .m {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+  }
+
+  .aaa {
+      display: block;
+      gap: 20px;
+      margin-left: 0;
+      text-align: center;
+  }
+
+  #text, #email, #Message {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .ddg {
+      height: 400px;
+  }
+
+  .ee {
+      margin-left: 0;
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+      padding: 10px;
+  }
+
+  .logo {
+      font-size: 18px;
+  }
+
+  nav ul {
+      gap: 5px;
+  }
+
+  nav ul li a {
+      font-size: 14px;
+  }
+
+  .katta {
+      padding: 10px;
+  }
+
+  .tt {
+      font-size: 14px;
+  }
+
+  .fds {
+      display: block;
+      margin-left: 0;
+      text-align: center;
+  }
+
+  .f img {
+      width: 100%;
+      height: auto;
+  }
+
+  .katta1 {
+      height: auto;
+  }
+
+  .div {
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .okm {
+      display: block;
+      margin-top: 10px;
+  }
+
+  .o, .k, .m {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+  }
+
+  .aaa {
+      display: block;
+      gap: 20px;
+      margin-left: 0;
+      text-align: center;
+  }
+
+  #text, #email, #Message {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .ddg {
+      height: 300px;
+  }
+
+  .ee {
+      margin-left: 0;
+      text-align: center;
+  }
+}
